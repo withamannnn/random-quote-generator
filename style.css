@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #002339;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 15px 30px;
+    border: 0;
+    outline: 0;
+    background-color: #019f55;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #045d33;
+}
+
+.quote-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -25%;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quote-header h2 {
+    color: #019f55;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+
+.quote-box {
+    width: 550px;
+    height: 200px;
+    border: none;
+    outline: none;
+    background: #fff;
+    position: relative;
+    bottom: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#quoteSection {
+    position: relative;
+    top: -30px;
+    max-width: 600px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+#authorSection {
+    position: relative;
+    left: 150px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.line {
+    background-color: black;
+    width: 70%;
+    position: relative;
+    top: 20px;
+}
+
+.speaker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #002339;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    transition: 0.5s;
+}
+
+.speaker:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 767px){
+    .quote-box {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    #quoteSection, #authorSection {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #quoteSection {
+        position: relative;
+        top: -5px;
+    }
+
+    #authorSection{
+        position: relative;
+        left: 100px;
+    }
+    
+    .quote-header h2 {
+        font-size: 24px;
+        letter-spacing: 3px;
+        position: relative;
+        top: 200%;
+        text-decoration: underline;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    .speaker:focus{
+        outline: none;
+    }
+    
+}
